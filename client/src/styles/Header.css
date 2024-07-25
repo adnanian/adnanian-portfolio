@@ -1,0 +1,58 @@
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: grid;
+    background: linear-gradient(
+        to bottom right,
+        darkolivegreen, 
+        darkgreen, 
+        green, 
+        forestgreen, 
+        darkseagreen, 
+        lightgreen, 
+        lime, 
+        lightgreen, 
+        darkseagreen, 
+        forestgreen, 
+        green, 
+        darkgreen, 
+        darkolivegreen 
+    );
+    width: 100%;
+    height: fit-content;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        grid-template-rows: auto auto auto;
+    }
+
+    header > * {
+        text-align: center;
+    }
+
+    #site-logo img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    header {
+        grid-template-columns: auto auto auto;
+    }
+
+    header > :is(span, nav) {
+        margin: 60px 40px 0;
+    }
+    
+    header nav > * {
+        margin: 20px 15px 0 0;
+    }
+
+    #site-logo img {
+        width: 100px;
+        height: 100px;
+    }
+}
