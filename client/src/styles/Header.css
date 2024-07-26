@@ -1,26 +1,95 @@
 header {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: green;
+    border: 3px solid lime;
+    width: stretch;
+}
+
+#site-logo {
+    background-color: darkslategray;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    text-decoration: none;
+    margin: 6px;
+    padding: 6px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+
+#site-logo:hover {
+    background-color: black;
+}
+
+#site-logo img {
+    width: 50px;
+    height: 50px;
+}
+
+#site-logo span {
+    margin-left: 8px;
+}
+
+@media only screen and (max-width: 767px) {
+    #site-logo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inline-menu {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    
+    #site-logo {
+        display: flex;
+    }
+    
+    header > span {
+        font-size: 30px;
+    }
+
+    .inline-menu * {
+        margin-right: 10px;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+}
+
+/* header {
     position: sticky;
     top: 0;
     left: 0;
     display: grid;
-    background: linear-gradient(
-        to bottom right,
-        darkolivegreen, 
-        darkgreen, 
-        green, 
-        forestgreen, 
-        darkseagreen, 
-        lightgreen, 
-        lime, 
-        lightgreen, 
-        darkseagreen, 
-        forestgreen, 
-        green, 
-        darkgreen, 
-        darkolivegreen 
-    );
-    width: 100%;
+    background-color: green;
+    border: 3px solid lime;
+    width: stretch;
     height: fit-content;
+}
+
+#site-logo {
+    background-color: darkslategray;
+    width: fit-content;
+    height: fit-content;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-shadow: 1px 1px 2px #020, 0 0 1em black, 0 0 0.2em black;
+    text-align: center;
+    padding: 0;
+}
+
+header span {
+    color: white;
+    text-shadow: 1px 1px 2px #020, 0 0 1em black, 0 0 0.2em black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @media only screen and (max-width: 600px) {
@@ -30,6 +99,10 @@ header {
 
     header > * {
         text-align: center;
+    }
+
+    #site-logo {
+        font-size: 12px;
     }
 
     #site-logo img {
@@ -43,16 +116,60 @@ header {
         grid-template-columns: auto auto auto;
     }
 
-    header > :is(span, nav) {
-        margin: 60px 40px 0;
+    header > * {
+        margin: 10px 40px 0;
     }
     
-    header nav > * {
-        margin: 20px 15px 0 0;
+    header nav > a {
+        margin: 30px 15px 0 0;
+    }
+
+    #site-logo {
+        font-size: 25px;
+    }
+
+    header > span {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-height: 600px) {
+    
+    header nav > a {
+        margin: 10px 8px 0 0;
+    }
+
+    #site-logo {
+        font-size: 16px;
     }
 
     #site-logo img {
-        width: 100px;
-        height: 100px;
+        width: 50px;
+        height: 50px;
+    }
+
+    header > span {
+        font-size: 30px;
+    }
+
+    .off-screen-menu {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto auto;
     }
 }
+
+@media only screen and (min-width: 1500px) and (min-height: 800px) {
+    header > span {
+        font-size: 100px;
+    }
+
+    #site-logo img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .off-screen-menu {
+        display: inline-block;
+    }
+} */

@@ -20,6 +20,7 @@ export default function Header() {
         ),
         (
             <a
+                key="skills"
                 className="nav-link"
                 href="#skills"
                 title="Click here to learn more about Adnan's skills."
@@ -29,6 +30,7 @@ export default function Header() {
         ),
         (
             <a
+                key="tech-projects"
                 className="nav-link"
                 href="#technical-projects"
                 title="Click here to view Adnan's technical works."
@@ -38,6 +40,7 @@ export default function Header() {
         ),
         (
             <a
+                key="side-projects"
                 className="nav-link"
                 href="#side-projects"
                 title="Click here to view Adnan's projects that don't involve software engineering."
@@ -47,6 +50,7 @@ export default function Header() {
         ),
         (
             <a
+                key="contact"
                 className="nav-link"
                 href="#contact"
                 title="Click here to navigate to a form where you can get in touch with Adnan."
@@ -59,23 +63,35 @@ export default function Header() {
     return (
         <header>
             <a
+                id="site-logo"
+                className="fancy-font"
                 href="#home"
                 title="Click here to navigate back to the home page."
             >
-                <figure id="site-logo">
+                {/* <figure>
                     <img
                         src="./adnanian-flag.png"
                         alt="The flag of Adnan - Consists of a black square with four rings, each in red, black, white, and green."
                     />
                     <figcaption>Home Page</figcaption>
-                </figure>
+                </figure> */}
+                <img
+                    src="./adnanian-flag.png"
+                    alt="The flag of Adnan - Consists of a black square with four rings, each in red, black, white, and green."
+                />
+                <span>Home Page</span>
             </a>
-            <span>Adnan Wazwaz</span>
-            <nav className="off-screen-menu">
+            <span className="fancy-font">Adnan Wazwaz</span>
+            <nav className="inline-menu">
                 {navigationalLinks}
             </nav>
             <nav className="hamburger-menu">
-
+                {/* <ul>
+                    {navigationalLinks}
+                </ul>
+                <a href="javascript:void(0);" className="icon">
+                    <i className="fa fa-bars"></i>
+                </a> */}
             </nav>
         </header>
     )
