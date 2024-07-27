@@ -1,8 +1,8 @@
 header {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: space-between;
-    background-color: green;
+    background-color: var(--header-color);
     border: 3px solid lime;
     width: stretch;
 }
@@ -33,9 +33,22 @@ header {
     margin-left: 8px;
 }
 
+.hamburger-button {
+    background-color: var(--header-color) !important;
+    color: white !important;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 0px;
+    border: none;
+}
+
+.hamburger-menu-false {
+    display: none;
+}
+
 @media only screen and (max-width: 767px) {
     header {
-        flex-direction: column;
+        display: block;
     }
 
     #site-logo {
@@ -58,11 +71,17 @@ header {
         font-size: 30px;
     }
 
+    .inline-menu {
+        display: inline-flex;
+        align-items: center;
+        text-align: center;
+    }
+
     .inline-menu * {
         margin-right: 10px;
     }
 
-    .hamburger-menu {
+    .hamburger-menu, .hamburger-button {
         display: none;
     }
 }

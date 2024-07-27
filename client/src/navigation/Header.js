@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "../styles/Header.css";
 
 /**
@@ -6,6 +7,11 @@ import "../styles/Header.css";
  * @returns 
  */
 export default function Header() {
+    const [showMobileMenu, setShowMobileMenu] = useState(false);
+
+    const toggle = () => {
+        setShowMobileMenu((isOpen) => !isOpen);
+    }
 
     const navigationalLinks = [
         (
@@ -34,8 +40,10 @@ export default function Header() {
                 className="nav-link"
                 href="#technical-projects"
                 title="Click here to view Adnan's technical works."
+                style={{display: 'flex', flexDirection: 'column'}}
             >
-                Technical Projects
+                <span>Technical</span> 
+                <span>Projects</span>
             </a>
         ),
         (
@@ -44,8 +52,10 @@ export default function Header() {
                 className="nav-link"
                 href="#side-projects"
                 title="Click here to view Adnan's projects that don't involve software engineering."
+                style={{display: 'flex', flexDirection: 'column'}}
             >
-                Side Projects
+                <span>Side</span> 
+                <span>Projects</span>
             </a>
         ),
         (
@@ -85,14 +95,12 @@ export default function Header() {
             <nav className="inline-menu">
                 {navigationalLinks}
             </nav>
-            <nav className="hamburger-menu">
-                {/* <ul>
-                    {navigationalLinks}
-                </ul>
-                <a href="javascript:void(0);" className="icon">
-                    <i className="fa fa-bars"></i>
-                </a> */}
+            <nav className={`hamburger-menu-${showMobileMenu}`}>
+                {navigationalLinks}
             </nav>
+            <button className="hamburger-button" onClick={toggle}>
+                &equiv;
+            </button>
         </header>
     )
 }
