@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background-color: black;
+  color: white;
   background-image: conic-gradient(black 33%, #222, black 66%);
   background-repeat: no-repeat;
   background-attachment: fixed;

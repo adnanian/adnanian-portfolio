@@ -1,0 +1,17 @@
+#home {
+    display: block;
+    text-align: center;
+}
+
+.down-arrow {
+    font-size: 100px;
+    font-weight: bolder;
+    background-color: red;
+    border-radius: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+    #home {
+        padding: 0 20px;
+    }
+}
