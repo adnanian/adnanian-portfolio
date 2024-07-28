@@ -13,6 +13,12 @@ export default function Header() {
         setShowMobileMenu((isOpen) => !isOpen);
     }
 
+    const smartToggleOff = () => {
+        if (showMobileMenu) {
+            setShowMobileMenu(() => false);
+        }
+    }
+
     const navigationalLinks = [
         (
             <a
@@ -20,6 +26,7 @@ export default function Header() {
                 className="nav-link"
                 href="#about"
                 title="Click here to learn more about Adnan Wazwaz."
+                onClick={smartToggleOff}
             >
                 About
             </a>
@@ -30,6 +37,7 @@ export default function Header() {
                 className="nav-link"
                 href="#skills"
                 title="Click here to learn more about Adnan's skills."
+                onClick={smartToggleOff}
             >
                 Skills
             </a>
@@ -41,9 +49,16 @@ export default function Header() {
                 href="#technical-projects"
                 title="Click here to view Adnan's technical works."
                 style={{display: 'flex', flexDirection: 'column'}}
+                onClick={smartToggleOff}
             >
-                <span>Technical</span> 
-                <span>Projects</span>
+                {
+                    showMobileMenu ? "Technical Projects" : (
+                        <>
+                            <span>Technical</span> 
+                            <span>Projects</span>
+                        </>
+                    )
+                }
             </a>
         ),
         (
@@ -53,9 +68,16 @@ export default function Header() {
                 href="#side-projects"
                 title="Click here to view Adnan's projects that don't involve software engineering."
                 style={{display: 'flex', flexDirection: 'column'}}
+                onClick={smartToggleOff}
             >
-                <span>Side</span> 
-                <span>Projects</span>
+                {
+                    showMobileMenu ? "Side Projects" : (
+                        <>
+                            <span>Side</span> 
+                            <span>Projects</span>
+                        </>
+                    )
+                }
             </a>
         ),
         (
@@ -64,6 +86,7 @@ export default function Header() {
                 className="nav-link"
                 href="#contact"
                 title="Click here to navigate to a form where you can get in touch with Adnan."
+                onClick={smartToggleOff}
             >
                 Contact
             </a>
@@ -74,24 +97,17 @@ export default function Header() {
         <header>
             <a
                 id="site-logo"
-                className="fancy-font"
+                className={!showMobileMenu ? "fancy-font" : "no-show"}
                 href="#home"
                 title="Click here to navigate back to the home page."
             >
-                {/* <figure>
-                    <img
-                        src="./adnanian-flag.png"
-                        alt="The flag of Adnan - Consists of a black square with four rings, each in red, black, white, and green."
-                    />
-                    <figcaption>Home Page</figcaption>
-                </figure> */}
                 <img
                     src="./adnanian-flag.png"
                     alt="The flag of Adnan - Consists of a black square with four rings, each in red, black, white, and green."
                 />
                 <span>Home Page</span>
             </a>
-            <span className="fancy-font">Adnan Wazwaz</span>
+            <span className={!showMobileMenu ? "fancy-font" : "no-show"}>Adnan Wazwaz</span>
             <nav className="inline-menu">
                 {navigationalLinks}
             </nav>
