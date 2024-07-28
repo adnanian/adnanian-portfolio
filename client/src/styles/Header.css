@@ -6,7 +6,7 @@ header {
     border: 3px solid lime;
     position: fixed !important;
     top: 0;
-    width: 100%;
+    width: 99.7%;
     z-index: 999;
 }
 
@@ -56,9 +56,9 @@ header {
 }
 
 @media only screen and (max-width: 767px) {
-    header + main {
+    /* header + main {
         margin-top: 122px;
-    }
+    } */
 
     header > .no-show {
         display: none !important;
@@ -75,9 +75,9 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
-    header + main {
+    /* header + main {
         margin-top: 86px;
-    }
+    } */
 
     #site-logo {
         display: flex;

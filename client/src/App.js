@@ -1,15 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Footer from "./navigation/Footer";
 import Header from "./navigation/Header";
 import Home from "./sections/Home";
 import About from "./sections/About";
 
 function App() {
+  const [scrollOffset, setScrollOffset] = useState();
+
+  useEffect(() => {
+    const handleResize = () => {
+        setScrollOffset(() => document.querySelector('header').offsetHeight);
+    }
+
+    window.addEventListener('resize', handleResize);
+  }, []);
 
   return (
     <React.Fragment>
       <Header/>
-      <main>
+      <main style={{marginTop: `${scrollOffset}px`}}>
         <Home/>
         <About/>
       </main>

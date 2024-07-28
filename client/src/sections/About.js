@@ -2,9 +2,7 @@ import "../styles/About.css";
 
 export default function About() {
     return (
-        <div id="about">
-            <br />
-            <br />
+        <section id="about">
             <h1>Who am I?</h1>
             <div id="main-about-contents">
                 <figure>
@@ -75,6 +73,6 @@ export default function About() {
                     </p>
                 </article>
             </div>
-        </div>
+        </section>
     );
 }
