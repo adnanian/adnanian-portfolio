@@ -11,7 +11,7 @@ class TechProject {
     }
 }
 
-const techDirectory = "./images/tech/";
+const techProjectDirectory = "./images/tech/";
 
 const techProjects = [
     new TechProject(
@@ -25,7 +25,7 @@ const techProjects = [
         "https://github.com/adnanian/atw-flatiron-phase-1-project",
         "https://www.youtube.com/watch?v=bmy29HlcJNc",
         null,
-        `${techDirectory}my-word-bank.png`,
+        `${techProjectDirectory}my-word-bank.png`,
         new Date('July 20, 2024')
     ),
     new TechProject(
@@ -39,7 +39,7 @@ const techProjects = [
         "https://github.com/adnanian/atw-flatiron-cli-project",
         "https://www.youtube.com/watch?v=XMmLwLyzkWw",
         null,
-        `${techDirectory}language-classifications-cli.png`,
+        `${techProjectDirectory}language-classifications-cli.png`,
         new Date('July 20, 2024')
     ),
     new TechProject(
@@ -54,9 +54,81 @@ const techProjects = [
         "https://github.com/adnanian/easy-itemizer-web",
         "https://youtu.be/67ajXbG4d7M?feature=shared",
         "https://www.easyitemizer.com/",
-        `${techDirectory}easy-itemizer.jpg`,
+        `${techProjectDirectory}easy-itemizer.jpg`,
         new Date('July 20, 2024')
     )
+];
+
+class Skill {
+    constructor(name, iconUrl) {
+        this.name = name;
+        this.iconUrl = iconUrl;
+    }
+}
+
+const techStackDirectory = "./assets/techstack/";
+
+const skillSet = [
+    new Skill(
+        'Java',
+        `${techStackDirectory}Java.svg`
+    ),
+    new Skill(
+        'Eclipse IDE',
+        `${techStackDirectory}Eclipse IDE.svg`
+    ),
+    new Skill(
+        'HTML',
+        `${techStackDirectory}HTML5.svg`
+    ),
+    new Skill(
+        'CSS',
+        `${techStackDirectory}CSS3.svg`
+    ),
+    new Skill(
+        'JavaScript',
+        `${techStackDirectory}JavaScript.svg`
+    ),
+    new Skill(
+        'React',
+        `${techStackDirectory}React.svg`
+    ),
+    new Skill(
+        'Python',
+        `${techStackDirectory}Python.svg`
+    ),
+    new Skill(
+        'Flask',
+        `${techStackDirectory}Flask.svg`
+    ),
+    new Skill(
+        'SQLite',
+        `${techStackDirectory}SQLite.svg`
+    ),
+    new Skill(
+        'SQLAlchemy',
+        `${techStackDirectory}SQLAlchemy.svg`
+    ),
+    new Skill(
+        'PostgreSQL',
+        `${techStackDirectory}PostgresSQL.svg`
+    ),
+    new Skill(
+        'MySQL',
+        `${techStackDirectory}MySQL.svg`
+    ),
+    new Skill(
+        'JSON',
+        `${techStackDirectory}JSON.svg`
+    ),
+    new Skill(
+        'Postman',
+        `${techStackDirectory}Postman.svg`
+    ),
+    new Skill(
+        'Git',
+        `${techStackDirectory}Git.svg`
+    ),
 ]
 
-export {techProjects}
+export {techProjects, skillSet}

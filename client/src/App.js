@@ -3,6 +3,7 @@ import Footer from "./navigation/Footer";
 import Header from "./navigation/Header";
 import Home from "./sections/Home";
 import About from "./sections/About";
+import SkillsSection from "./sections/SkillsSection";
 
 function App() {
   const [scrollOffset, setScrollOffset] = useState();
@@ -21,6 +22,7 @@ function App() {
       <main style={{marginTop: `${scrollOffset}px`}}>
         <Home/>
         <About/>
+        <SkillsSection/>
       </main>
       <Footer/>
     </React.Fragment>
