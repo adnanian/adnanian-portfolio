@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "../styles/Header.css";
 
 /**
@@ -6,18 +5,8 @@ import "../styles/Header.css";
  * 
  * @returns 
  */
-export default function Header() {
-    const [showMobileMenu, setShowMobileMenu] = useState(false);
-
-    const toggle = () => {
-        setShowMobileMenu((isOpen) => !isOpen);
-    }
-
-    const smartToggleOff = () => {
-        if (showMobileMenu) {
-            setShowMobileMenu(() => false);
-        }
-    }
+export default function Header({showMobileMenu, onToggle, onSmartToggle}) {
+    
 
     const navigationalLinks = [
         (
@@ -26,7 +15,7 @@ export default function Header() {
                 className="nav-link"
                 href="#about"
                 title="Click here to learn more about Adnan Wazwaz."
-                onClick={smartToggleOff}
+                onClick={onSmartToggle}
             >
                 About
             </a>
@@ -37,7 +26,7 @@ export default function Header() {
                 className="nav-link"
                 href="#skills"
                 title="Click here to learn more about Adnan's skills."
-                onClick={smartToggleOff}
+                onClick={onSmartToggle}
             >
                 Skills
             </a>
@@ -49,7 +38,7 @@ export default function Header() {
                 href="#technical-projects"
                 title="Click here to view Adnan's technical works."
                 style={{display: 'flex', flexDirection: 'column'}}
-                onClick={smartToggleOff}
+                onClick={onSmartToggle}
             >
                 {
                     showMobileMenu ? "Technical Projects" : (
@@ -68,7 +57,7 @@ export default function Header() {
                 href="#side-projects"
                 title="Click here to view Adnan's projects that don't involve software engineering."
                 style={{display: 'flex', flexDirection: 'column'}}
-                onClick={smartToggleOff}
+                onClick={onSmartToggle}
             >
                 {
                     showMobileMenu ? "Side Projects" : (
@@ -86,7 +75,7 @@ export default function Header() {
                 className="nav-link"
                 href="#contact"
                 title="Click here to navigate to a form where you can get in touch with Adnan."
-                onClick={smartToggleOff}
+                onClick={onSmartToggle}
             >
                 Contact
             </a>
@@ -114,7 +103,7 @@ export default function Header() {
             <nav className={`hamburger-menu-${showMobileMenu}`}>
                 {navigationalLinks}
             </nav>
-            <button className="hamburger-button" onClick={toggle}>
+            <button className="hamburger-button" onClick={onToggle}>
                 &equiv;
             </button>
         </header>
