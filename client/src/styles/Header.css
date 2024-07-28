@@ -4,7 +4,10 @@ header {
     justify-content: space-between;
     background-color: var(--header-color);
     border: 3px solid lime;
-    width: stretch;
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 999;
 }
 
 #site-logo {
@@ -53,6 +56,10 @@ header {
 }
 
 @media only screen and (max-width: 767px) {
+    header + main {
+        margin-top: 122px;
+    }
+
     header > .no-show {
         display: none !important;
     }
@@ -68,6 +75,9 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
+    header + main {
+        margin-top: 86px;
+    }
 
     #site-logo {
         display: flex;

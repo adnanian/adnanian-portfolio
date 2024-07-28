@@ -3,8 +3,6 @@ import "../styles/Home.css";
 export default function Home() {
     return (
         <div id="home">
-            <br/>
-            <br/>
             <h1>Hi, I'm Adnan Wazwaz</h1>
             <h3>I'm a Full Stack Software Engineer, Card Game Creator, and Arabic Enthusiast</h3>
             <br/>
