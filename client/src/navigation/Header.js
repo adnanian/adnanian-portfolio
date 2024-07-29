@@ -84,18 +84,19 @@ export default function Header({showMobileMenu, onToggle, onSmartToggle}) {
 
     return (
         <header>
-            <a
+            <button
                 id="site-logo"
                 className={!showMobileMenu ? "fancy-font" : "no-show"}
-                href="#home"
-                title="Click here to navigate back to the home page."
+                // href="#home"
+                title="Click here to navigate back to the top."
+                onClick={() => window.scrollTo(0, 0)}
             >
                 <img
                     src="./adnanian-flag.png"
                     alt="The flag of Adnan - Consists of a black square with four rings, each in red, black, white, and green."
                 />
-                <span>Home Page</span>
-            </a>
+                {/* <span>Home Page</span> */}
+            </button>
             <span className={!showMobileMenu ? "fancy-font" : "no-show"}>Adnan Wazwaz</span>
             <nav className="inline-menu">
                 {navigationalLinks}

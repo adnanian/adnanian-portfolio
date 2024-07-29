@@ -5,6 +5,16 @@
     justify-content: space-between;
 }
 
+#skills span {
+    background-color: darkgreen;
+    padding: 8px 20px;
+    border-radius: 15px;
+}
+
+#skills span .nav-link {
+    font-size: 16px;
+}
+
 #skills ul {
     list-style: none;
     align-items: center;
@@ -30,6 +40,10 @@
 }
 
 @media only screen and (max-width: 767px) {
+    #skills span .external {
+        border: none;
+    }
+    
     #skills ul li {
         margin-top: 15px;
     }

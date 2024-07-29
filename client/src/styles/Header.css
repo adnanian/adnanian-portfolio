@@ -6,7 +6,7 @@ header {
     border: 3px solid lime;
     position: fixed !important;
     top: 0;
-    width: 99.7%;
+    width: 98.7vw;
     z-index: 999;
 }
 

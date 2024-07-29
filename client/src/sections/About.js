@@ -69,7 +69,8 @@ export default function About() {
                     <p>When I'm not programming, you can find me working on a side
                         project such as my card game, Mada. &#40;See the side
                         projects section for more information.&#41; Currently
-                        perfecting my Arabic and studying other languages in the future.
+                        perfecting my Arabic and Russian. Plans to study Spanish
+                        in the future.
                     </p>
                 </article>
             </div>
