@@ -4,6 +4,9 @@ import Header from "./navigation/Header";
 import Home from "./sections/Home";
 import About from "./sections/About";
 import SkillsSection from "./sections/SkillsSection";
+import TechnicalProjectsSection from "./sections/TechnicalProjectsSection";
+import SideProjectsSection from "./sections/SideProjectsSection";
+import ContactForm from "./sections/ContactForm";
 
 function App() {
   const [scrollOffset, setScrollOffset] = useState(() => {
@@ -49,6 +52,9 @@ function App() {
         <Home/>
         <About/>
         <SkillsSection/>
+        <TechnicalProjectsSection/>
+        <SideProjectsSection/>
+        <ContactForm/>
       </main>
       <Footer/>
     </React.Fragment>
