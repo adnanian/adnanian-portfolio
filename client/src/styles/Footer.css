@@ -1,0 +1,48 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #020;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.media-link {
+    margin: 0 10px;
+}
+
+.media-link img:hover {
+    background-color: black;
+    background-color: rgb(192, 192, 192 ,0.43);
+    border-radius: 50px;
+}
+
+footer span {
+    font-size: 19px;
+}
+
+@media only screen and (max-width: 767px) {
+    footer {
+        padding: 10px;
+    }
+
+    .media-link img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    footer span {
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .media-link img {
+        width: 70px;
+        height: 70px;
+        
+    }
+}

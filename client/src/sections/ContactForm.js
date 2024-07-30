@@ -18,25 +18,28 @@ export default function ContactForm() {
     return (
         <section id="contact">
             <h1 className="fancy-font">Get in Touch with Me</h1>
-            <form name="Contact Adnan Form" netlify>
+            <form name="Contact Adnan Form" netlify="true">
                 <label htmlFor="name">Name</label>
                 <input 
                     name="name" 
-                    type="text" 
-                    value={formData.name} 
+                    type="text"
+                    value={formData.name}
+                    placeholder="Enter your name..."
                     onChange={handleChange}
                 />
                 <label htmlFor="email">Email</label>
                 <input 
                     name="email" 
                     type="email" 
-                    value={formData.email} 
+                    value={formData.email}
+                    placeholder="Enter your email..."
                     onChange={handleChange}
                 />
                 <label htmlFor="message">Message</label>
                 <textarea
                     name="message"
                     value={formData.message}
+                    placeholder="Enter your message..."
                     onChange={handleChange}
                     rows="10"
                 ></textarea>
