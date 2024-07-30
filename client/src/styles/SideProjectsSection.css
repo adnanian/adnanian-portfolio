@@ -5,5 +5,50 @@
     justify-content: center;
     text-align: center;
     margin: 0 auto;
-    width: 700px;
+    width: 200px; /* adjust */
+    margin-bottom: 300px;
+}
+
+@media only screen and (max-width: 767px) {
+    #side-projects .slideshow {
+        width: fit-content;
+        height: 300px;
+    }
+
+    #side-projects .slideshow {
+        width: 200px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #side-projects .slideshow img {
+        width: 200px;
+        height: 300px;
+    }
+
+    #side-projects .slideshow > .slide-navigation {
+        display: flex;
+        flex-direction: column !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #side-projects {
+        width: 700px;
+    }
+
+    #side-projects article {
+        margin-bottom: 25px;
+    }
+
+    #side-projects .slideshow {
+        width: fit-content;
+        height: 500px;
+    }
+
+    #side-projects .slideshow img {
+        width: 500px;
+        height: 500px;
+    }
 }

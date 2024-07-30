@@ -1,7 +1,7 @@
 import { useState } from "react"
 import "../styles/Slideshow.css"
 
-export default function Slideshow({id, children}) {
+export default function Slideshow({id, title, children}) {
     const [currentIndex, setCurrentIndex] = useState(0);
     const childComponents = [...children];
 
@@ -19,9 +19,15 @@ export default function Slideshow({id, children}) {
 
     return (
         <div id={id} className="slideshow">
-            <button className="slide-button col-1" onClick={previous}>&lt;</button>
-            {childComponents[currentIndex]}
-            <button className="slide-button col-1" onClick={next}>&gt;</button>
+            <div className="slide-heading">
+                <h3>{title}</h3>
+                <h4>{`Slide ${currentIndex + 1} of ${childComponents.length}`}</h4>
+            </div>
+            <div className="slide-navigation">
+                <button className="slide-button" onClick={previous}>&lt;</button>
+                {childComponents[currentIndex]}
+                <button className="slide-button" onClick={next}>&gt;</button>
+            </div>
         </div>
     )
 }

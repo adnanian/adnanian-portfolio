@@ -7,10 +7,27 @@
     font-weight: bold;
 }
 
+.slide-button:hover {
+    background: linear-gradient(to bottom, black, darkslategray, silver, white);
+    color: red;
+}
+
 @media only screen and (min-width: 768px) and (min-height: 500px) {
     .slideshow {
         width: 700px;
         height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+    }
+
+    .slide-heading {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .slideshow > .slide-navigation {
         display: flex;
         flex-direction: row;
     }

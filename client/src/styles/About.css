@@ -8,18 +8,11 @@
 }
 
 #about figure {
-    background-color: rgb(114, 65, 0);
+    /* background-color: rgb(114, 65, 0);
     border: 4px solid rgb(212, 143, 78);
-    border-radius: 15px;
+    border-radius: 15px; */
     padding: 8px;
     width: fit-content;
-}
-
-#about article {
-    border: 4px solid silver;
-    border-radius: 15px;
-    padding: 10px 20px;
-    text-align: start;
 }
 
 @media only screen and (max-width: 767px) {
