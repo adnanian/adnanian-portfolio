@@ -12,12 +12,12 @@
     border-radius: 15px;
 }
 
-#skills span .nav-link {
+#skills span .external {
     font-size: 16px;
     background-color: silver;
 }
 
-#skills span .nav-link:hover {
+#skills span .external:hover {
     background-color: white;
 }
 
@@ -48,6 +48,7 @@
 @media only screen and (max-width: 767px) {
     #skills span .external {
         border: none;
+        background-color: rgb(114, 65, 0);
     }
     
     #skills ul li {
