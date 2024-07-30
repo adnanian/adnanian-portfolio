@@ -18,7 +18,8 @@ export default function ContactForm() {
     return (
         <section id="contact">
             <h1 className="fancy-font">Get in Touch with Me</h1>
-            <form name="Contact Adnan Form" netlify="true">
+            <form name="contact" method="post">
+                <input type="hidden" name="form-name" value="contact" />
                 <label htmlFor="name">Name</label>
                 <input 
                     name="name" 
@@ -27,6 +28,7 @@ export default function ContactForm() {
                     placeholder="Enter your name..."
                     onChange={handleChange}
                 />
+                <br/>
                 <label htmlFor="email">Email</label>
                 <input 
                     name="email" 
@@ -35,6 +37,7 @@ export default function ContactForm() {
                     placeholder="Enter your email..."
                     onChange={handleChange}
                 />
+                <br/>
                 <label htmlFor="message">Message</label>
                 <textarea
                     name="message"
