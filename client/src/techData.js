@@ -26,7 +26,7 @@ const techProjects = [
         "https://www.youtube.com/watch?v=bmy29HlcJNc",
         null,
         `${techProjectDirectory}my-word-bank.png`,
-        new Date('July 20, 2024')
+        new Date('October 16, 2023')
     ),
     new TechProject(
         "Language Classifications CLI",
@@ -40,7 +40,7 @@ const techProjects = [
         "https://www.youtube.com/watch?v=XMmLwLyzkWw",
         null,
         `${techProjectDirectory}language-classifications-cli.png`,
-        new Date('July 20, 2024')
+        new Date('February 7, 2024')
     ),
     new TechProject(
         "Easy Itemizer",
@@ -55,7 +55,7 @@ const techProjects = [
         "https://youtu.be/67ajXbG4d7M?feature=shared",
         "https://www.easyitemizer.com/",
         `${techProjectDirectory}easy-itemizer.jpg`,
-        new Date('July 20, 2024')
+        new Date('July 11, 2024')
     )
 ];
 

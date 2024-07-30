@@ -23,7 +23,7 @@ export default function TechnicalProjectsSection() {
             <Slideshow id="tech-slides">
                 {techProjectSlides}
             </Slideshow>
-            <ul>
+            <ul id="project-card-list">
                 {techProjectCards}
             </ul>
         </section>

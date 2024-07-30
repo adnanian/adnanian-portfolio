@@ -3,10 +3,10 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: var(--header-color);
-    border: 3px solid lime;
+    /* border: 3px solid lime; */
     position: fixed !important;
     top: 0;
-    width: 98.7vw;
+    width: 100%;
     z-index: 999;
 }
 
@@ -43,6 +43,7 @@ header {
     font-weight: bold;
     border-radius: 0px;
     border: none;
+    margin-right: 20px;
 }
 
 .hamburger-menu-false {
@@ -102,7 +103,6 @@ header {
         display: none;
     }
 }
-
 /* header {
     position: sticky;
     top: 0;

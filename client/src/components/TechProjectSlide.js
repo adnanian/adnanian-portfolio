@@ -1,5 +1,7 @@
+import { getDateOnly } from "../helpers";
+
 export default function TechProjectSlide({techProject}) {
-    
+
     const details = techProject.details.map((detail, index) => {
         return <li key={index}><p>{detail}</p></li>
     });
@@ -10,7 +12,7 @@ export default function TechProjectSlide({techProject}) {
                 <img src={techProject.image} alt="The technical project on the computer."/>
                 <div className="project-info">
                     <h3>{techProject.name}</h3>
-                    <span>{techProject.dateAdded.toString()}</span>
+                    <span>{getDateOnly(techProject.dateAdded)}</span>
                     <p className="text-box">{techProject.headline}</p>
                     <ul>
                         {details}
