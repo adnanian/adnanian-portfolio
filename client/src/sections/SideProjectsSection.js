@@ -15,6 +15,7 @@ export default function SideProjectsSection() {
     const imageSlides = images.map((image) => {
         return (
             <img
+                key={image.substring(0, image.indexOf('.'))}
                 src={`./images/mada/${image}`}
                 alt="Mada card design."
             />
@@ -23,7 +24,7 @@ export default function SideProjectsSection() {
 
     return (
         <section id="side-projects">
-            <h1>My Side Projects</h1>
+            <h1 className="fancy-font">My Side Projects</h1>
             <article>
                 <p>At this time, the only public active side-project is Mada, so for
                     now, I will dedicate this entire section to Mada.</p>

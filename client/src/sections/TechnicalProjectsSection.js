@@ -19,9 +19,9 @@ export default function TechnicalProjectsSection() {
 
     return (
         <section id="technical-projects">
-            <h1>My Technical Projects</h1>
+            <h1 className="fancy-font">My Technical Projects</h1>
             <article>
-                <p className="fancy-font">
+                <p>
                     Here are all the applications I made. Use the arrow buttons to
                     navigate between each slide. Each project includes a link to the
                     GitHub repository as well as a video demonstration. For all deployed
