@@ -6,7 +6,6 @@ import "../styles/Header.css";
  * @returns 
  */
 export default function Header({showMobileMenu, onToggle, onSmartToggle}) {
-    
 
     const navigationalLinks = [
         (
@@ -82,6 +81,11 @@ export default function Header({showMobileMenu, onToggle, onSmartToggle}) {
         )
     ];
 
+    const scrollToTop = () => {
+        window.scrollTo(0, 0);
+        document.location.href = "#";
+    };
+
     return (
         <header>
             <button
@@ -89,7 +93,7 @@ export default function Header({showMobileMenu, onToggle, onSmartToggle}) {
                 className={!showMobileMenu ? "fancy-font" : "no-show"}
                 // href="#home"
                 title="Click here to navigate back to the top."
-                onClick={() => window.scrollTo(0, 0)}
+                onClick={scrollToTop}
             >
                 <img
                     src="./adnanian-flag.png"
