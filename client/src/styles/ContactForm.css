@@ -61,6 +61,7 @@
         font-size: 18px;
     }
 
+    /*Reference: https://stackoverflow.com/questions/2034544/textareas-rows-and-cols-attribute-in-css */
     #contact form textarea {
         width: 25em;
     }

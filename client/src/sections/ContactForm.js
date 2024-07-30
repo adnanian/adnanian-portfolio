@@ -18,7 +18,7 @@ export default function ContactForm() {
     return (
         <section id="contact">
             <h1 className="fancy-font">Get in Touch with Me</h1>
-            <form name="contact" netlify>
+            <form name="Contact Adnan Form" netlify>
                 <label htmlFor="name">Name</label>
                 <input 
                     name="name" 
