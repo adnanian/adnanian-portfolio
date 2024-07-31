@@ -1,11 +1,21 @@
 import "../styles/Header.css";
 
 /**
- * https://www.youtube.com/watch?v=aNDqzlAKmZc
+ * Creates a header. The header consists of Adnan's personal logo and a set of
+ * navigational links to each section of the page.
  * 
- * @returns 
+ * On smaller screens, a hamburger button will hide the links and will be shown
+ * by clicking on the hamburger button.
+ * 
+ * Building a Hamburger menu: https://www.youtube.com/watch?v=aNDqzlAKmZc
+ * 
+ * @param {Object} props 
+ * @param {Boolean} props.showMobileMenu if true and the screen is small, then the hamburger menu is shown.
+ * @param {Function} props.onToggle the callback function to execute to display/hide the hamburger menu.
+ * @param {Function} props.onSmartToggle the callback function to execute to forcibly hide the hamburger menu.
+ * @returns the header of this page.
  */
-export default function Header({showMobileMenu, onToggle, onSmartToggle}) {
+export default function Header({ showMobileMenu, onToggle, onSmartToggle }) {
 
     const navigationalLinks = [
         (
@@ -36,13 +46,13 @@ export default function Header({showMobileMenu, onToggle, onSmartToggle}) {
                 className="nav-link"
                 href="#technical-projects"
                 title="Click here to view Adnan's technical works."
-                style={{display: 'flex', flexDirection: 'column'}}
+                style={{ display: 'flex', flexDirection: 'column' }}
                 onClick={onSmartToggle}
             >
                 {
                     showMobileMenu ? "Technical Projects" : (
                         <>
-                            <span>Technical</span> 
+                            <span>Technical</span>
                             <span>Projects</span>
                         </>
                     )
@@ -55,13 +65,13 @@ export default function Header({showMobileMenu, onToggle, onSmartToggle}) {
                 className="nav-link"
                 href="#side-projects"
                 title="Click here to view Adnan's projects that don't involve software engineering."
-                style={{display: 'flex', flexDirection: 'column'}}
+                style={{ display: 'flex', flexDirection: 'column' }}
                 onClick={onSmartToggle}
             >
                 {
                     showMobileMenu ? "Side Projects" : (
                         <>
-                            <span>Side</span> 
+                            <span>Side</span>
                             <span>Projects</span>
                         </>
                     )
@@ -81,6 +91,10 @@ export default function Header({showMobileMenu, onToggle, onSmartToggle}) {
         )
     ];
 
+    /**
+     * Scrolls the window to the top of the page. Then, sets the current
+     * URL to # so that it shows that this is the top of the page.
+     */
     const scrollToTop = () => {
         window.scrollTo(0, 0);
         document.location.href = "#";

@@ -1,11 +1,18 @@
 import "../styles/Home.css";
 
+/**
+ * Renders the top level content of the page (after the header).
+ * Note: The name "Home" is a misnomer, as this application is one
+ * page instead of multiple.
+ * 
+ * @returns the top section.
+ */
 export default function Home() {
     return (
         <section id="home">
             <h1 className="fancy-font">Hi, I'm Adnan Wazwaz</h1>
             <h3>I'm a Full Stack Software Engineer, Card Game Creator, and Arabic Enthusiast</h3>
-            <br/>
+            <br />
             <p>Welcome to the Adnanian Order. Here, you will find all my greatest ideas.
                 Scroll down or click on the navigational links above to learn more.
             </p>

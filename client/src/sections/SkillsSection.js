@@ -2,6 +2,11 @@ import TechSkillCard from "../components/TechSkillCard";
 import { skillSet } from "../techData";
 import "../styles/SkillsSection.css";
 
+/**
+ * Creates a section of the page showing all of Adnan's skills.
+ * 
+ * @returns the skills section.
+ */
 export default function SkillsSection() {
 
     const skillCards = skillSet.map((skill) => {

@@ -1,4 +1,19 @@
+/**
+ * A container for one of Adnan's technical projects.
+ */
 class TechProject {
+    /**
+     * Creates a new instance of TechProject.
+     * 
+     * @param {String} name the name of the project.
+     * @param {String} headline the one sentence summary of the project.
+     * @param {Array} details list of points that pertain to the project.
+     * @param {String} githubLink the GitHub URL for the project.
+     * @param {String} demoLink the link to the demonstration of the project.
+     * @param {String} liveLink the link to the live application or place where it can be downloaded and installed.
+     * @param {String} image the URL of a screenshot of the application.
+     * @param {Date} dateAdded the date that the project was completed/added.
+     */
     constructor(name, headline, details, githubLink, demoLink, liveLink, image, dateAdded) {
         this.name = name;
         this.headline = headline;
@@ -59,7 +74,16 @@ const techProjects = [
     )
 ];
 
+/**
+ * Container for a technical skill, such as a programming language or an operating system.
+ */
 class Skill {
+    /**
+     * Creates a new instance of Skill.
+     * 
+     * @param {String} name the name.
+     * @param {String} iconUrl the icon URL.
+     */
     constructor(name, iconUrl) {
         this.name = name;
         this.iconUrl = iconUrl;
@@ -131,4 +155,4 @@ const skillSet = [
     ),
 ]
 
-export {techProjects, skillSet}
+export { techProjects, skillSet }

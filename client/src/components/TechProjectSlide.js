@@ -1,15 +1,23 @@
 import { getDateOnly } from "../helpers";
 
-export default function TechProjectSlide({techProject}) {
+/**
+ * Creates a slide for the slideshow based on the information
+ * of a given TechProject.
+ * 
+ * @param {Object} props
+ * @param {techProject} props.techProject the TechProject instance. 
+ * @returns the technical project's information rendered as a slide (or a card if on small devices).
+ */
+export default function TechProjectSlide({ techProject }) {
 
     const details = techProject.details.map((detail, index) => {
         return <li key={index}><p>{detail}</p></li>
     });
-    
+
     return (
         <div className="project-slide">
             <div className="slide-core">
-                <img src={techProject.image} alt="The technical project on the computer."/>
+                <img src={techProject.image} alt="The technical project on the computer." />
                 <div className="project-info">
                     <h3>{techProject.name}</h3>
                     <span>{getDateOnly(techProject.dateAdded)}</span>

@@ -1,5 +1,11 @@
 import "../styles/Footer.css";
 
+/**
+ * Creates a footer. This footer consists of the copyright jargon and a set
+ * of navigational links to Adnan's social media profiles.
+ * 
+ * @returns a footer of external links and copyright.
+ */
 export default function Footer() {
     const profilesDirectory = "./assets/profiles/";
 
@@ -16,7 +22,7 @@ export default function Footer() {
                 </a>
             </span>
             <nav>
-            <a
+                <a
                     href="https://www.linkedin.com/in/adnan-wazwaz-09aa1b2b7"
                     target="_blank"
                     rel="noreferrer"

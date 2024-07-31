@@ -1,5 +1,11 @@
 import "../styles/About.css";
 
+/**
+ * Creates an About section. It consists of a picture of Adnan and a brief
+ * biography of him.
+ * 
+ * @returns the About section.
+ */
 export default function About() {
     return (
         <section id="about">

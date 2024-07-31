@@ -3,17 +3,24 @@ import TechProjectSlide from "../components/TechProjectSlide";
 import { techProjects } from "../techData";
 import "../styles/TechnicalProjectsSection.css";
 
+/**
+ * Creates a section showing all of Adnan's technical works.
+ * If the screen is large, then the technical works will be rendered as a slideshow.
+ * Otherwise, they will be rendered as a vertical list of cards.
+ * 
+ * @returns the list of technical projects.
+ */
 export default function TechnicalProjectsSection() {
-    
+
     const techProjectSlides = techProjects.map((techProject) => {
         return (
-            <TechProjectSlide key={techProject.name} techProject={techProject}/>
+            <TechProjectSlide key={techProject.name} techProject={techProject} />
         );
     });
 
     const techProjectCards = techProjects.map((techProject) => {
         return (
-            <li key={techProject.name}><TechProjectSlide  techProject={techProject}/></li>
+            <li key={techProject.name}><TechProjectSlide techProject={techProject} /></li>
         );
     });
 
