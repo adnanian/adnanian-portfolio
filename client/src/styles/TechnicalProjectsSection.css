@@ -50,6 +50,11 @@
     .project-slide ul {
         text-align: start;
     }
+
+    .slide-nav .external {
+        background-color: black;
+        color: silver;
+    }
 }
 
 @media only screen and (min-width: 768px) and (min-height: 500px) {
