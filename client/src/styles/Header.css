@@ -2,10 +2,11 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-    border-bottom: 1px ridge var(--accent);
+    justify-content: space-between;
     position: fixed !important;
     width: 100%;
+    top: 0;
+    background-color: #111;
     z-index: 999;
 }
 
@@ -36,8 +37,6 @@ header {
 }
 
 .hamburger-button {
-    background-color: var(--header-color) !important;
-    color: white !important;
     font-size: 30px;
     font-weight: bold;
     border-radius: 0px;

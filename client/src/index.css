@@ -17,6 +17,14 @@ code {
     monospace;
 }
 
+main {
+  margin-top: 100px;
+}
+
+h1 {
+  font-size: xx-large;
+}
+
 .heading-font {
   color: inherit;
   font-size: large;
@@ -42,7 +50,7 @@ code {
   border-radius: 15px;
 }
 
-button, .slide-heading {
+/* button, .slide-heading {
   background-color: black;
   color: lime;
 }
@@ -64,7 +72,7 @@ article {
   border-radius: 15px;
   padding: 10px 20px;
   text-align: start;
-}
+} */
 
 @media only screen and (max-width: 400px) {
   :target {

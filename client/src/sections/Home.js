@@ -10,7 +10,7 @@ import "../styles/Home.css";
 export default function Home() {
     return (
         <section id="home">
-            <h1 className="fancy-font">Hi, I'm Adnan Wazwaz</h1>
+            <h1>Hi, I'm Adnan Wazwaz</h1>
             <h3>I'm a Full Stack Software Engineer, Card Game Creator, and Arabic Enthusiast</h3>
             <br />
             <p>Welcome to the Adnanian Order. Here, you will find all my greatest ideas.

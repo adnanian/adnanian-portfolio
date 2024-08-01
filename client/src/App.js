@@ -29,23 +29,16 @@ function App() {
   return (
     <React.Fragment>
       <Header/>
+      <main>
+        <Home />
+        <About />
+        {/* <SkillsSection />
+        <TechnicalProjectsSection />
+        <SideProjectsSection />
+        <ContactForm /> */}
+      </main>
+      {/* <Footer /> */}
     </React.Fragment>
-    // <React.Fragment>
-    //   <Header
-    //     showMobileMenu={showMobileMenu}
-    //     onToggle={toggle}
-    //     onSmartToggle={smartToggleOff}
-    //   />
-    //   <main style={{ marginTop: `${scrollOffset}px` }}>
-    //     <Home />
-    //     <About />
-    //     <SkillsSection />
-    //     <TechnicalProjectsSection />
-    //     <SideProjectsSection />
-    //     <ContactForm />
-    //   </main>
-    //   <Footer />
-    // </React.Fragment>
   );
 }
 

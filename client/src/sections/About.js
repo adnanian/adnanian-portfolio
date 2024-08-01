@@ -9,7 +9,7 @@ import "../styles/About.css";
 export default function About() {
     return (
         <section id="about">
-            <h1 className="fancy-font">Who am I?</h1>
+            <h1>Who am I?</h1>
             <div id="main-about-contents">
                 <figure className="brown-frame">
                     <img

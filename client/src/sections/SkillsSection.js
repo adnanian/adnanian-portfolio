@@ -17,7 +17,7 @@ export default function SkillsSection() {
 
     return (
         <section id="skills">
-            <h1 className="fancy-font">What am I Good At?</h1>
+            <h1>What am I Good At?</h1>
             <span className="brown-frame">
                 Icons taken from&nbsp;
                 <a 
