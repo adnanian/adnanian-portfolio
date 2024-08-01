@@ -1,11 +1,10 @@
 header {
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    background-color: var(--header-color);
-    /* border: 3px solid lime; */
+    justify-content: space-evenly;
+    border-bottom: 1px ridge var(--accent);
     position: fixed !important;
-    top: 0;
     width: 100%;
     z-index: 999;
 }
@@ -58,7 +57,7 @@ header {
     margin-left: 30px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), (max-height: 499px) {
     /* header + main {
         margin-top: 122px;
     } */
@@ -69,7 +68,6 @@ header {
 
     #site-logo {
         display: flex;
-        flex-direction: column;
     }
 
     .inline-menu {
