@@ -2,11 +2,11 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     position: fixed !important;
     width: 100%;
     top: 0;
-    background-color: #111;
+    background-color: var(--alternative-background-color);
     z-index: 999;
 }
 

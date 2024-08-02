@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    text-align: center;
 }
 
 #skills span {
@@ -10,6 +10,8 @@
     border: 4px solid rgb(212, 143, 78); */
     padding: 8px 20px;
     /* border-radius: 15px; */
+    /* width: 70%;
+    align-self: center; */
 }
 
 #skills span .external {
@@ -23,7 +25,8 @@
 
 #skills ul {
     list-style: none;
-    align-items: center;
+    display: grid;
+    border: outset;
 }
 
 .skill-card {
@@ -34,6 +37,7 @@
     width: 120px;
     height: 120px;
     text-align: center;
+    border-color: var(--alternative-background-color);
 }
 
 .skill-card * {
@@ -54,11 +58,25 @@
     #skills ul li {
         margin-top: 15px;
     }
+
+    .skill-card {
+        width: 90px;
+        height: 90px;
+    }
+
+    .skill-card img {
+        width: 48px;
+        height: 48px;
+    }
+
+    #skills ul {
+        grid-template-columns: auto auto;
+        width: 70%;
+    }
 }
 
 @media only screen and (min-width: 768px) {
     #skills ul {
-        display: grid;
         grid-template-columns: auto auto auto auto;
         grid-template-rows: auto auto auto auto;
     }

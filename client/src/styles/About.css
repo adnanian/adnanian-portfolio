@@ -15,9 +15,13 @@
     width: fit-content;
 }
 
-#about article {
-    width: calc(100% - 50px);
+#about figure img {
+    border-radius: 200px;
 }
+
+/* #about article {
+    width: calc(100% - 50px);
+} */
 
 @media only screen and (max-width: 767px) {
     #about figure img {
