@@ -19,8 +19,8 @@
 }
 
 #skills > p .external:hover {
-    background-color: white !important;
-    color: black;
+    background-color: var(--background-color-negative) !important;
+    color: var(--foreground-color-negative);
 }
 
 #skills #skill-grid {
