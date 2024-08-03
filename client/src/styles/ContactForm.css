@@ -8,9 +8,7 @@
 #contact form {
     display: flex;
     flex-direction: column;
-    background-color: #200;
-    border: 4px double #f77;
-    border-radius: 25px;
+    border: 4px outset var(--alternative-background-color);
     padding: 2px 6px;
     margin-bottom: 50px;
 }
@@ -19,12 +17,17 @@
     margin: 5px;
 }
 
-#contact form :not(label) {
-    border-radius: 25px;
+#contact form :not(label, input[type="submit"]) {
+    border: 4px inset var(--accent-negative);
+}
+
+#contact form input[type="submit"] {
+    border: inherit;
 }
 
 #contact h1 {
     text-align: center;
+    font-size: 1.8em;
 }
 
 #contact form :is(input, textarea) {
@@ -47,6 +50,16 @@
 #contact form input[type="submit"]:hover {
     background: linear-gradient(to right, darkslategray, white, darkslategray);
     font-size: 25px;
+}
+
+@media (prefers-color-scheme: light) {
+    #contact form {
+        border-color: var(--alternative-background-color-negative);
+    }
+
+    #contact form :not(label, input[type="submit"]) {
+        border: 4px inset var(--accent);
+    }
 }
 
 @media only screen and (min-width: 768px) {

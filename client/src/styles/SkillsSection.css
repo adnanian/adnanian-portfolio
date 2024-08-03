@@ -7,7 +7,7 @@
 
 #skills > p {
     padding: 6px 30px;
-    width: 100px;
+    width: 200px;
     margin: 0 auto;
     font-size: 16px;
 }
@@ -74,42 +74,3 @@
         margin-top: 6px;
     }
 }
-
-/* 
-
-@media only screen and (max-width: 767px) {
-    #skills span .external {
-        border: none;
-        background-color: rgb(114, 65, 0);
-    }
-    
-    #skills ul li {
-        margin-top: 15px;
-    }
-
-    .skill-card {
-        width: 90px;
-        height: 90px;
-    }
-
-    .skill-card img {
-        width: 48px;
-        height: 48px;
-    }
-
-    #skills ul {
-        grid-template-columns: auto auto;
-        width: 70%;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    #skills ul {
-        grid-template-columns: auto auto auto auto;
-        grid-template-rows: auto auto auto auto;
-    }
-
-    #skills ul li {
-        margin: 8px 20px;
-    }
-} */

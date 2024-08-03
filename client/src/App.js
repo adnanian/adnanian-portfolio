@@ -6,7 +6,7 @@ import About from "./sections/About";
 import SkillsSection from "./sections/SkillsSection";
 // import TechnicalProjectsSection from "./sections/TechnicalProjectsSection";
 // import SideProjectsSection from "./sections/SideProjectsSection";
-// import ContactForm from "./sections/ContactForm";
+import ContactForm from "./sections/ContactForm";
 
 /**
  * Render all sections here.
@@ -35,7 +35,7 @@ function App() {
         <SkillsSection />
         {/* <TechnicalProjectsSection /> */}
         {/* <SideProjectsSection /> */}
-        {/* <ContactForm /> */}
+        <ContactForm />
       </main>
       {/* <Footer /> */}
     </React.Fragment>

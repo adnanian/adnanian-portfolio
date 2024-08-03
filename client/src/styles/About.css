@@ -31,6 +31,10 @@
 }
 
 @media only screen and (max-width: 767px) {
+    #about figure {
+        width: 200px;
+    }
+
     #about figure img {
         width: 144px;
         height: 192px;
