@@ -32,7 +32,7 @@ function App() {
       <main>
         <Home />
         <About />
-        {/* <SkillsSection /> */}
+        <SkillsSection />
         {/* <TechnicalProjectsSection /> */}
         {/* <SideProjectsSection /> */}
         {/* <ContactForm /> */}

@@ -1,3 +1,14 @@
+:root {
+  --background-color: #222;
+  --background-color-negative: #ddd;
+  --alternative-background-color: #111;
+  --alternative-background-color-negative: #eee;
+  --foreground-color: #ccc;
+  --foreground-color-negative: #333;
+  --accent: #c0c0c0;
+  --accent-negative: #3f3f3f;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,10 +16,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --background-color: #222;
-  --alternative-background-color: #111;
-  --foreground-color: #ccc;
-  --accent: silver;
+
   background-color: var(--background-color);
   color: var(--foreground-color);
 }
@@ -39,10 +47,10 @@ h1 {
 }
 
 .external {
-  background-color: var(--alternative-background-color) !important; 
+  background-color: var(--alternative-background-color) !important;
   border: 1px solid;
   border-radius: 15px;
-  
+
 }
 
 .nav-link:hover {
@@ -54,15 +62,14 @@ h1 {
 }
 
 article {
-  border: 4px outset var(--alternative-background-color);
   padding: 10px 20px;
   text-align: start;
-  
+
 }
 
-.round-frame {
-  border: 4px outset var(--accent);
-  border-radius: 15px;
+article,
+.inner-frame {
+  border: 4px inset var(--alternative-background-color);
 }
 
 /* button, .slide-heading {
@@ -84,6 +91,19 @@ button, .lime-border, .slideshow :is(div, img, nav, .slide-heading) {
 
  */
 
+@media (prefers-color-scheme: light) {
+  body {
+    --background-color: #ddd;
+    --background-color-negative: #222;
+    --alternative-background-color: #eee;
+    --alternative-background-color-negative: #111;
+    --foreground-color: #333;
+    --foreground-color-negative: #ccc;
+    --accent: #3f3f3f;
+    --accent-negative: #c0c0c0;
+  }
+}
+
 @media only screen and (max-width: 400px) {
   :target {
     scroll-margin-top: 122px;
@@ -98,6 +118,7 @@ button, .lime-border, .slideshow :is(div, img, nav, .slide-heading) {
   .nav-link {
     font-size: 20px;
   }
+
   :target {
     scroll-margin-top: 101px;
   }
@@ -105,7 +126,7 @@ button, .lime-border, .slideshow :is(div, img, nav, .slide-heading) {
   article {
     width: calc(70%);
   }
-  
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -116,11 +137,19 @@ button, .lime-border, .slideshow :is(div, img, nav, .slide-heading) {
   :target {
     scroll-margin-top: 86px;
   }
-  
+
+  article {
+    border-width: 6px;
+
+  }
+
+  .inner-frame {
+    border-width: 7px;
+  }
+
 }
 
 @media only screen and (min-width: 768px) and (max-height: 499px) {
-  
   .nav-link {
     font-size: 20px;
   }

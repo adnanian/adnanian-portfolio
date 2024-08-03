@@ -11,7 +11,7 @@ export default function About() {
         <section id="about">
             <h1>Who am I?</h1>
             <div id="main-about-contents">
-                <figure className="brown-frame">
+                <figure className="inner-frame">
                     <img
                         src="./images/adnan_profile_pic.jpg"
                         alt="A short-haired black-bearded man with blue glasses, sitting in front of a table and smiling."

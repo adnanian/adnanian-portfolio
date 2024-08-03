@@ -11,14 +11,14 @@ export default function SkillsSection() {
 
     const skillCards = skillSet.map((skill) => {
         return (
-            <li key={`t-${skill.name}`}><TechSkillCard skill={skill} /></li>
+            <TechSkillCard key={`t-${skill.name}`} skill={skill} />
         )
     })
 
     return (
         <section id="skills">
             <h1>What am I Good At?</h1>
-            <span className="round-frame">
+            <p className="inner-frame">
                 Icons taken from&nbsp;
                 <a 
                     href="https://techicons.dev/?search=j" 
@@ -37,10 +37,10 @@ export default function SkillsSection() {
                 >
                     DevIcons
                 </a>.
-            </span>
-            {/* <ul>
+            </p>
+            <div id="skill-grid">
                 {skillCards}
-            </ul> */}
+            </div>
         </section>
     );
 }
