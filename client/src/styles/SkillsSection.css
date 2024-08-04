@@ -16,6 +16,7 @@
     font-size: inherit;
     border: none;
     background-color: inherit !important;
+    text-decoration: underline;
 }
 
 #skills > p .external:hover {

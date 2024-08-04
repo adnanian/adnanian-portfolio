@@ -7,6 +7,7 @@ import SkillsSection from "./sections/SkillsSection";
 // import TechnicalProjectsSection from "./sections/TechnicalProjectsSection";
 // import SideProjectsSection from "./sections/SideProjectsSection";
 import ContactForm from "./sections/ContactForm";
+import Projects from "./sections/Projects";
 
 /**
  * Render all sections here.
@@ -33,6 +34,7 @@ function App() {
         <Home />
         <About />
         <SkillsSection />
+        <Projects/>
         {/* <TechnicalProjectsSection /> */}
         {/* <SideProjectsSection /> */}
         <ContactForm />

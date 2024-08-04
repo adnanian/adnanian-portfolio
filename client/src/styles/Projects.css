@@ -1,0 +1,13 @@
+#projects {
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#projects > p {
+    padding: 6px 30px;
+    width: 200px;
+    margin: 0 auto;
+    font-size: 16px;
+}

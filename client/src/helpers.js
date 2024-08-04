@@ -23,4 +23,13 @@ const getDateOnly = (date) => {
     return `${months[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`;
 };
 
-export { getDateOnly }
+/**
+ * There are two types of projects that I work on, technical projects (applications),
+ * and side projects (other interesting stuff).
+ */
+const ProjectType = Object.freeze({
+    TECHNICAL: "technical",
+    SIDE: "side"
+});
+
+export { getDateOnly, ProjectType }

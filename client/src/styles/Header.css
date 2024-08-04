@@ -20,7 +20,7 @@ header {
     padding: 6px;
     align-items: center;
     justify-content: space-between;
-    border-radius: 15px;
+    border: 1px outset var(--accent);
 }
 
 #site-logo:hover {
@@ -64,10 +64,6 @@ header {
 }
 
 @media only screen and (max-width: 767px), (max-height: 499px) {
-    /* header + main {
-        margin-top: 122px;
-    } */
-
     header > .no-show {
         display: none !important;
     }
@@ -82,10 +78,6 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
-    /* header + main {
-        margin-top: 86px;
-    } */
-
     #site-logo {
         display: flex;
     }
