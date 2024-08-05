@@ -20,8 +20,8 @@ export default function SkillsSection() {
             <h1>What am I Good At?</h1>
             <p className="inner-frame">
                 Icons taken from&nbsp;
-                <a 
-                    href="https://techicons.dev/?search=j" 
+                <a
+                    href="https://techicons.dev/?search=j"
                     className="external"
                     target="_blank"
                     rel="noreferrer"
@@ -29,8 +29,8 @@ export default function SkillsSection() {
                     TechIcons
                 </a>
                 , which in turn have been sourced from&nbsp;
-                <a 
-                    href="https://github.com/devicons/devicon" 
+                <a
+                    href="https://github.com/devicons/devicon"
                     className="external"
                     target="_blank"
                     rel="noreferrer"

@@ -16,12 +16,12 @@ function App() {
 
   return (
     <React.Fragment>
-      <Header/>
+      <Header />
       <main>
         <Home />
         <About />
         <SkillsSection />
-        <Projects/>
+        <Projects />
         <ContactForm />
       </main>
       <Footer />

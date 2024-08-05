@@ -7,6 +7,11 @@ import SideProjectsList from "./sub-sections/SideProjectsList";
 export default function Projects() {
     const [projectType, setProjectType] = useState(ProjectType.TECHNICAL);
 
+    /**
+     * Sets a new value for the project type state based on the radio button clicked.
+     * 
+     * @param {Event} e the event
+     */
     function handleChange(e) {
         setProjectType(e.target.value);
     }
@@ -45,9 +50,9 @@ export default function Projects() {
             </div>
             {
                 projectType === ProjectType.TECHNICAL ? (
-                    <TechnicalProjectsList/>
+                    <TechnicalProjectsList />
                 ) : (
-                    <SideProjectsList/>
+                    <SideProjectsList />
                 )
             }
         </section>

@@ -14,11 +14,11 @@ import NavLink from "../components/NavLink";
 export default function Header() {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
 
-     /**
-     * Scrolls the window to the top of the page. Then, sets the current
-     * URL to # so that it shows that this is the top of the page.
-     */
-     const scrollToTop = () => {
+    /**
+    * Scrolls the window to the top of the page. Then, sets the current
+    * URL to # so that it shows that this is the top of the page.
+    */
+    const scrollToTop = () => {
         window.scrollTo(0, 0);
         document.location.href = "#";
     };
@@ -35,7 +35,7 @@ export default function Header() {
      */
     const smartToggleOff = () => {
         if (showMobileMenu) {
-        setShowMobileMenu(() => false);
+            setShowMobileMenu(() => false);
         }
     }
 
@@ -54,7 +54,7 @@ export default function Header() {
 
     const navigationalLinks = ['about', 'skills', 'projects', 'contact'].map((linkName) => {
         const titleCaseText = linkName.replace(linkName.charAt(0), linkName.charAt(0).toUpperCase());
-        
+
         return (
             <NavLink
                 key={linkName}

@@ -4,7 +4,7 @@ import Slideshow from "../../components/Slideshow";
  * This sub-section is where all the side projects go.
  * At this time, 07/31/2024, there is only one publicly active side project: Mada.
  * 
- * @returns the side projects section.
+ * @returns the side projects sub-section.
  */
 export default function SideProjectsList() {
     const images = [

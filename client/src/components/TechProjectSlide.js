@@ -17,9 +17,9 @@ export default function TechProjectSlide({ techProject }) {
     return (
         <div className="project-slide">
             <div className="slide-core">
-                <img 
-                    src={techProject.image} 
-                    alt="The technical project on the computer." 
+                <img
+                    src={techProject.image}
+                    alt="The technical project on the computer."
                     className="inner-frame"
                 />
                 <div className="project-info inner-frame">

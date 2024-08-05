@@ -1,11 +1,11 @@
 # Adnanian Order - The Portfolio of Adnan Wazwaz
 Author: Adnan Wazwaz
 
-Version: 1.0
+Version: 2.0
 
 Original Date: 2024 July 31
 
-Current Version Date: 2024 July 31
+Current Version Date: 2024 August 5
 
 Adnanian Application # 4
 
@@ -16,8 +16,13 @@ Adnanian Application # 4
     2. [Why This Application was Created](#why-this-application-was-created)
     3. [Technologies](#technologies)
     4. [Limitations](#limitations)
-2. [Future Plans](#future-plans)
-3. [Credits](#credits)
+2. [Changes](#changes)
+    1. [Original Wireframe](#original-wireframe)
+    2. [Before Proper Styling](#before-proper-styling)
+    3. [After Proper Styling](#after-proper-styling)
+    4. [Other Changes](#other-changes)
+3. [Future Plans](#future-plans)
+4. [Credits](#credits)
 
 
 ## Overview
@@ -45,9 +50,52 @@ to send directly to my email address.
 
 Because this is a frontend-only application, I had to hard code collections of
 my techstack and projects. Another limitation is the difficulty of managing
-appropriate styling for both desktop and mobile. As of 1.1, Adnanian Order is
-successfully styled for desktop computers and mobile phones. However, there is
-a lingering issue with tablets, mainly the technical projects slide show.
+appropriate styling for both desktop and mobile. As of 2.0, Adnanian Order is
+successfully styled for desktop computers and mobile devices. However, there is
+a lingering issue for the footer width for horizontal, mobile phones.
+
+## Changes
+
+The most significant change in this application was the CSS. The following changes
+were made in regards to the styling:
+
+- I reduced my color scheme, so that not only am I using only two to three colors
+with different shades, but using colors that are compatible with one another.
+
+- I stopped using gradient effects for the background. I opted to use solid colors
+instead.
+
+- For dark mode, I have the whole page as a black with white text. I added a light
+mode media query which displays the negatives of those colors.
+
+- I stopped using any glow text.
+
+- I removed the borders of all links. Although, some still have borders when they
+are hovered.
+
+- Ensured to align elements properly.
+
+- When re-styling, I ensured to style my elements for mobile devices first before
+doing them for desktop.
+
+With those significant improvements in the styling, my website looks much cleaner.
+
+### Original Wireframe
+
+![Original Wireframe](/README_images/Portfolio%20Website%20Wireframe%20-20240725.png)
+
+### Before Proper Styling
+
+![Before Proper Styling](/README_images/bad-styling.jpg)
+
+### After Proper Styling
+
+![After Proper Styling](/README_images/better-styling.jpg)
+
+### Other Changes
+In terms of JSX content, I combined the technical projects and side projects
+section into one section. In this version, the user can toggle between radio
+buttons to view project types. Less scrolling makes it easier.
 
 ## Future Plans
 
@@ -66,7 +114,6 @@ for all platforms and screen sizes.
 and not just for Mada.
 
 - Add more technical projects.
-
 
 ## Credits
 MIT License
@@ -91,4 +138,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-Shoutout to [Kyra Hamerling-Potts](https://www.linkedin.com/in/kyra-hamerling-potts/) for offering CSS feedback and suggestions.
+Shoutout to [Kyra Hamerling-Potts](https://www.linkedin.com/in/kyra-hamerling-potts/)
+and [Anna Cole](https://www.linkedin.com/in/anna--cole/) for offering CSS feedback and suggestions.
+
+Special shoutout to [Danesh Madarbakus](https://www.linkedin.com/in/daneshmadarbakus/) for
+his honest feedback and his knowledge on portfolios. He has shown me examples of how
+most modern websites are styled now adays. I took his feedback to heart and applied all these
+styling changes that you see in version 2.0 due to them. Thanks, bro.
