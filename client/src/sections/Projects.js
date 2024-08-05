@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "../styles/Projects.css";
 import { ProjectType } from "../helpers";
+import TechnicalProjectsList from "./sub-sections/TechnicalProjectsList";
+import SideProjectsList from "./sub-sections/SideProjectsList";
 
 export default function Projects() {
     const [projectType, setProjectType] = useState(ProjectType.TECHNICAL);
@@ -18,9 +20,9 @@ export default function Projects() {
                 mentioned above. The other category are side projects that I work
                 on whenever I have free time.
             </p>
+            <h2>Select the project type below: </h2>
             <div className="radio-group">
-                <h2>Select the project type below: </h2>
-                <div class="radio">
+                <div className="radio">
                     <input
                         name="tech-radio"
                         type="radio"
@@ -30,7 +32,7 @@ export default function Projects() {
                     />
                     <span>Technical Projects</span>
                 </div>
-                <div class="radio">
+                <div className="radio">
                     <input
                         name="side-radio"
                         type="radio"
@@ -38,14 +40,14 @@ export default function Projects() {
                         onChange={handleChange}
                         checked={projectType === ProjectType.SIDE}
                     />
-                    <span>Technical Projects</span>
+                    <span>Side Projects</span>
                 </div>
             </div>
             {
                 projectType === ProjectType.TECHNICAL ? (
-                    <p>Tech projects here...</p>
+                    <TechnicalProjectsList/>
                 ) : (
-                    <p>Side projects here...</p>
+                    <SideProjectsList/>
                 )
             }
         </section>

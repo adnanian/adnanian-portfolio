@@ -64,12 +64,16 @@ h1 {
 article {
   padding: 10px 20px;
   text-align: start;
-
+  margin: auto;
 }
 
 article,
 .inner-frame {
   border: 4px inset var(--alternative-background-color);
+}
+
+.outer-frame {
+  border: 4px outset var(--alternative-background-color);
 }
 
 /* button, .slide-heading {
@@ -101,6 +105,15 @@ button, .lime-border, .slideshow :is(div, img, nav, .slide-heading) {
     --foreground-color-negative: #ccc;
     --accent: #3f3f3f;
     --accent-negative: #c0c0c0;
+  }
+
+  button {
+    background-color: black;
+    color: white;
+  }
+
+  .outer-frame {
+    border: 4px outset var(--alternative-background-color-negative);
   }
 }
 

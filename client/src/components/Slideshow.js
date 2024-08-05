@@ -40,10 +40,12 @@ export default function Slideshow({ id, title, children }) {
                 <h3>{title}</h3>
                 <h4>{`Slide ${currentIndex + 1} of ${childComponents.length}`}</h4>
             </div>
-            <div className="slide-navigation">
-                <button className="slide-button" onClick={previous}>&lt;</button>
+            <div className="slide-container">
+                <div className="slide-navigation">
+                    <button className="slide-button outer-frame" onClick={previous}>&lt;</button>
+                    <button className="slide-button outer-frame" onClick={next}>&gt;</button>
+                </div>
                 {childComponents[currentIndex]}
-                <button className="slide-button" onClick={next}>&gt;</button>
             </div>
         </div>
     );

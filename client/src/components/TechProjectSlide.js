@@ -17,8 +17,12 @@ export default function TechProjectSlide({ techProject }) {
     return (
         <div className="project-slide">
             <div className="slide-core">
-                <img src={techProject.image} alt="The technical project on the computer." />
-                <div className="project-info">
+                <img 
+                    src={techProject.image} 
+                    alt="The technical project on the computer." 
+                    className="inner-frame"
+                />
+                <div className="project-info inner-frame">
                     <h3>{techProject.name}</h3>
                     <span>{getDateOnly(techProject.dateAdded)}</span>
                     <p className="text-box">{techProject.headline}</p>
@@ -27,7 +31,7 @@ export default function TechProjectSlide({ techProject }) {
                     </ul>
                 </div>
             </div>
-            <nav className="slide-nav">
+            <nav className="slide-nav inner-frame">
                 {
                     !techProject.githubLink ? null : (
                         <a

@@ -27,6 +27,9 @@ function App() {
   //   }
   // });
 
+  console.log(window.innerWidth);
+  console.log(window.innerHeight);
+
   return (
     <React.Fragment>
       <Header/>
