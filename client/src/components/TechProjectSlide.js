@@ -35,7 +35,7 @@ export default function TechProjectSlide({ techProject }) {
                 {
                     !techProject.githubLink ? null : (
                         <a
-                            className="nav-link external"
+                            className="external"
                             href={techProject.githubLink}
                             target="_blank"
                             rel="noreferrer"
@@ -47,7 +47,7 @@ export default function TechProjectSlide({ techProject }) {
                 {
                     !techProject.demoLink ? null : (
                         <a
-                            className="nav-link external"
+                            className="external"
                             href={techProject.demoLink}
                             target="_blank"
                             rel="noreferrer"
@@ -59,7 +59,7 @@ export default function TechProjectSlide({ techProject }) {
                 {
                     !techProject.liveLink ? null : (
                         <a
-                            className="nav-link external"
+                            className="external"
                             href={techProject.liveLink}
                             target="_blank"
                             rel="noreferrer"

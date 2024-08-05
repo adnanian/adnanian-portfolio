@@ -46,6 +46,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 15px;
+    font-size: 18px;
 }
 
 #projects article {
@@ -85,6 +86,7 @@
     }
 
     .slide-nav {
+        font-size: 29px;
         justify-content: space-evenly;
     }
 }
@@ -107,6 +109,7 @@
 
     .slide-nav {
         justify-content: space-evenly;
+        font-size: 36px;
     }
 
     #mada-slides .slide-container {

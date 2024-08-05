@@ -11,12 +11,12 @@ export default function Footer() {
 
     return (
         <footer>
-            <span className="brown-frame">
+            <span id="footer-credit">
                 Icons by <a
                     target="_blank"
                     href="https://icons8.com"
                     rel="noreferrer"
-                    className="nav-link .external"
+                    className="external"
                 >
                     Icons8
                 </a>

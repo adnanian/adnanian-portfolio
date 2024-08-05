@@ -22,7 +22,7 @@ export default function SkillsSection() {
                 Icons taken from&nbsp;
                 <a 
                     href="https://techicons.dev/?search=j" 
-                    className="nav-link external"
+                    className="external"
                     target="_blank"
                     rel="noreferrer"
                 >
@@ -31,7 +31,7 @@ export default function SkillsSection() {
                 , which in turn have been sourced from&nbsp;
                 <a 
                     href="https://github.com/devicons/devicon" 
-                    className="nav-link external"
+                    className="external"
                     target="_blank"
                     rel="noreferrer"
                 >

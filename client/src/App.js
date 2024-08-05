@@ -1,11 +1,9 @@
 import React from "react";
-// import Footer from "./navigation/Footer";
+import Footer from "./navigation/Footer";
 import Header from "./navigation/Header";
 import Home from "./sections/Home";
 import About from "./sections/About";
 import SkillsSection from "./sections/SkillsSection";
-// import TechnicalProjectsSection from "./sections/TechnicalProjectsSection";
-// import SideProjectsSection from "./sections/SideProjectsSection";
 import ContactForm from "./sections/ContactForm";
 import Projects from "./sections/Projects";
 
@@ -16,20 +14,6 @@ import Projects from "./sections/Projects";
  */
 function App() {
 
-  // // Top margin value for the main element, so that all the content can be seen.
-  // const [scrollOffset, setScrollOffset] = useState(() => {
-  //   if (window.innerWidth >= 768) {
-  //     return 86;
-  //   } else if (window.innerWidth >= 600) {
-  //     return 101;
-  //   } else {
-  //     return 122;
-  //   }
-  // });
-
-  console.log(window.innerWidth);
-  console.log(window.innerHeight);
-
   return (
     <React.Fragment>
       <Header/>
@@ -38,11 +22,9 @@ function App() {
         <About />
         <SkillsSection />
         <Projects/>
-        {/* <TechnicalProjectsSection /> */}
-        {/* <SideProjectsSection /> */}
         <ContactForm />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </React.Fragment>
   );
 }

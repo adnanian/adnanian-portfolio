@@ -12,18 +12,6 @@
     font-size: 16px;
 }
 
-#skills > p .external {
-    font-size: inherit;
-    border: none;
-    background-color: inherit !important;
-    text-decoration: underline;
-}
-
-#skills > p .external:hover {
-    background-color: var(--background-color-negative) !important;
-    color: var(--foreground-color-negative);
-}
-
 #skills #skill-grid {
     display: grid;
     grid-template-columns: auto auto auto;
