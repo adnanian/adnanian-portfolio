@@ -7,7 +7,7 @@
 
 #projects > p {
     padding: 6px 30px;
-    width: 200px;
+    width: 62.5%;
     margin: 0 auto;
     font-size: 16px;
 }
@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .project-slide, #mada-slides {
@@ -52,17 +52,6 @@
 #projects article {
     width: 70%;
 }
-
-/* @media only screen and (min-width: 768px) {
-    #projects article {
-        width: 900px;
-    }
-
-    #projects > p {
-        width: 700px;
-    }
-} */
-
 #mada-slides .slide-container img {
     width: inherit;
     height: inherit;
