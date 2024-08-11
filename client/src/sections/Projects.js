@@ -22,7 +22,7 @@ export default function Projects() {
             <p className="inner-frame">
                 I have organized all my projects into two categories. One category
                 is reserved for all the applications that I made using the skills
-                mentioned above. The other category are side projects that I work
+                mentioned above. The other category is for side projects that I work
                 on whenever I have free time.
             </p>
             <h2>Select the project type below: </h2>

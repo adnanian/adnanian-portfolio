@@ -22,8 +22,8 @@ export default function About() {
                 </figure>
                 <article>
                     <p>I'm just a simple guy who is aspiring to achieve great things
-                        in life. Born and raised in the greater Twin Cities of Minnesota,
-                        I always wondered the above question myself. Evenetually, I found
+                        in life. Born and raised in the Greater Twin Cities of Minnesota,
+                        I always wondered the above question myself. Eventually, I found
                         my way in the world of programming.
                     </p>
                     <p>I graduated from Metropolitan State University with a Bachelor's

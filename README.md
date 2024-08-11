@@ -1,7 +1,7 @@
 # Adnanian Order - The Portfolio of Adnan Wazwaz
 Author: Adnan Wazwaz
 
-Version: 2.1
+Version: 2.1.1
 
 Original Date: 2024 July 31
 
@@ -91,6 +91,8 @@ With those significant improvements in the styling, my website looks much cleane
     - Windows 11
     - GitHub
     - Markdown
+
+- Corrected typos and grammatical mistakes.
 
 ### Original Wireframe
 
