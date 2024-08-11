@@ -1,11 +1,11 @@
 # Adnanian Order - The Portfolio of Adnan Wazwaz
 Author: Adnan Wazwaz
 
-Version: 2.0
+Version: 2.1
 
 Original Date: 2024 July 31
 
-Current Version Date: 2024 August 5
+Current Version Date: 2024 August 10
 
 Adnanian Application # 4
 
@@ -80,6 +80,18 @@ doing them for desktop.
 
 With those significant improvements in the styling, my website looks much cleaner.
 
+#### Version 2.1
+
+- Included more skills in the skills section:
+    - Ubuntu
+    - Bash
+    - Vite.js
+    - Visual Studio Code
+    - Android
+    - Windows 11
+    - GitHub
+    - Markdown
+
 ### Original Wireframe
 
 ![Original Wireframe](/README_images/Portfolio%20Website%20Wireframe%20-20240725.png)
@@ -114,6 +126,8 @@ for all platforms and screen sizes.
 and not just for Mada.
 
 - Add more technical projects.
+
+- Translate this website into Arabic.
 
 ## Credits
 MIT License

@@ -102,6 +102,14 @@ const skillSet = [
         `${techStackDirectory}Eclipse IDE.svg`
     ),
     new Skill(
+        'VS Code',
+        `${techStackDirectory}Visual Studio Code (VS Code).svg`
+    ),
+    new Skill(
+        'Markdown',
+        `${techStackDirectory}Markdown.svg`
+    ),
+    new Skill(
         'HTML',
         `${techStackDirectory}HTML5.svg`
     ),
@@ -116,6 +124,10 @@ const skillSet = [
     new Skill(
         'React',
         `${techStackDirectory}React.svg`
+    ),
+    new Skill(
+        'Vite.js',
+        `${techStackDirectory}Vite.js.svg`
     ),
     new Skill(
         'Python',
@@ -152,6 +164,26 @@ const skillSet = [
     new Skill(
         'Git',
         `${techStackDirectory}Git.svg`
+    ),
+    new Skill(
+        'GitHub',
+        `${techStackDirectory}GitHub.svg`
+    ),
+    new Skill(
+        'Bash',
+        `${techStackDirectory}Bash.svg`
+    ),
+    new Skill(
+        'Ubuntu',
+        `${techStackDirectory}Ubuntu.svg`
+    ),
+    new Skill(
+        'Android',
+        `${techStackDirectory}Android.svg`
+    ),
+    new Skill(
+        'Windows 11',
+        `${techStackDirectory}Windows 11.svg`
     ),
 ]
 
