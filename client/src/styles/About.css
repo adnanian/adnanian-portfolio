@@ -3,6 +3,10 @@
     text-align: center;
 }
 
+#about iframe {
+    width: 560px;
+}
+
 #main-about-contents > * {
     margin: 10px auto;
 }
@@ -27,6 +31,12 @@
     #about figure {
         background-color: var(--accent);
         color: var(--foreground-color-negative);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #about iframe {
+        width: 300px;
     }
 }
 

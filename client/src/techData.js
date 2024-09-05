@@ -94,14 +94,6 @@ const techStackDirectory = "./assets/techstack/";
 
 const skillSet = [
     new Skill(
-        'Java',
-        `${techStackDirectory}Java.svg`
-    ),
-    new Skill(
-        'Eclipse IDE',
-        `${techStackDirectory}Eclipse IDE.svg`
-    ),
-    new Skill(
         'VS Code',
         `${techStackDirectory}Visual Studio Code (VS Code).svg`
     ),
@@ -120,6 +112,10 @@ const skillSet = [
     new Skill(
         'JavaScript',
         `${techStackDirectory}JavaScript.svg`
+    ),
+    new Skill(
+        'TypeScript',
+        `${techStackDirectory}TypeScript.svg`
     ),
     new Skill(
         'React',
@@ -154,8 +150,24 @@ const skillSet = [
         `${techStackDirectory}MySQL.svg`
     ),
     new Skill(
+        'Microsoft SQL Server',
+        `${techStackDirectory}Microsoft SQL Server.svg`
+    ),
+    new Skill(
         'JSON',
         `${techStackDirectory}JSON.svg`
+    ),
+    new Skill(
+        'Java',
+        `${techStackDirectory}Java.svg`
+    ),
+    new Skill(
+        'Oracle',
+        `${techStackDirectory}Oracle.svg`
+    ),
+    new Skill(
+        'Eclipse IDE',
+        `${techStackDirectory}Eclipse IDE.svg`
     ),
     new Skill(
         'Postman',
@@ -184,6 +196,38 @@ const skillSet = [
     new Skill(
         'Windows 11',
         `${techStackDirectory}Windows 11.svg`
+    ),
+    new Skill(
+        'Apple',
+        `${techStackDirectory}Apple.svg`
+    ),
+    new Skill(
+        'Linux',
+        `${techStackDirectory}Linux.svg`
+    ),
+    new Skill(
+        'Raspberry Pi',
+        `${techStackDirectory}Raspberry Pi.svg`
+    ),
+    new Skill(
+        'Apple Safari',
+        `${techStackDirectory}Apple Safari.svg`
+    ),
+    new Skill(
+        'Chrome',
+        `${techStackDirectory}Chrome.svg`
+    ),
+    new Skill(
+        'Google',
+        `${techStackDirectory}Google.svg`
+    ),
+    new Skill(
+        'Internet Explorer 10',
+        `${techStackDirectory}Internet Explorer 10 (ie10).svg`
+    ),
+    new Skill(
+        'LinkedIn',
+        `${techStackDirectory}LinkedIn.svg`
     ),
 ]
 

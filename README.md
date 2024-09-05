@@ -1,11 +1,11 @@
 # Adnanian Order - The Portfolio of Adnan Wazwaz
 Author: Adnan Wazwaz
 
-Version: 2.1.1
+Version: 2.1.2
 
 Original Date: 2024 July 31
 
-Current Version Date: 2024 August 10
+Current Version Date: 2024 September 5
 
 Adnanian Application # 4
 
@@ -80,7 +80,7 @@ doing them for desktop.
 
 With those significant improvements in the styling, my website looks much cleaner.
 
-#### Version 2.1
+#### Version 2.1.1
 
 - Included more skills in the skills section:
     - Ubuntu
@@ -93,6 +93,24 @@ With those significant improvements in the styling, my website looks much cleane
     - Markdown
 
 - Corrected typos and grammatical mistakes.
+
+#### Version 2.1.2
+
+- Included more skills in the skills section:
+    - TypeScript (after completing two TypeScript LinkedIn courses, and I plan to complete more).
+    - Microsoft SQL Server
+    - Oracle
+    - Apple
+    - Linux
+    - Raspberry Pi
+    - Apple Safari
+    - Chrome
+    - Google
+    - Internet Explorer 10 (although nobody uses it anymore).
+    - LinkedIn
+
+- Moved the most releveant skills of the tech stack to the top of the skills
+section.
 
 ### Original Wireframe
 

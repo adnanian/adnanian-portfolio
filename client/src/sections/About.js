@@ -10,6 +10,22 @@ export default function About() {
     return (
         <section id="about">
             <h1>Who am I?</h1>
+            <h2>Too Lazy to Read? Watch This Instead:</h2>
+            <span className="down-arrow">&#8681;</span>
+            <div>
+                <iframe
+                    // width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/dt7ONbekERM?si=cMfYh7rp9-DqtPF2"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                ></iframe>
+            </div>
+            <h2>Can't Watch Right Now? Suck it Up and Read Below:</h2>
+            <span className="down-arrow">&#8681;</span>
             <div id="main-about-contents">
                 <figure className="inner-frame">
                     <img
