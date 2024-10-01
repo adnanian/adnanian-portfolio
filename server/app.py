@@ -2,6 +2,7 @@ from flask import make_response
 from models._models import *
 from config import app
 
+# RUN APP HERE
 
 @app.route("/")
 def index():
