@@ -8,6 +8,16 @@ from config import db
 
 class Skill(db.Model, SerializerMixin):
 
+    serialize_rules = (
+        '-skill_type.skills',
+        '-project_skills.skill_id',
+        '-project_skills.tech_project_id'
+        '-project_skills.skill',
+        '-project_skills.tech_project',
+        '-tech_projects.project_skills',
+        '-tech_projects.skills',
+    )
+    
     __tablename__ = "skills"
 
     id = db.Column(db.Integer, primary_key=True)

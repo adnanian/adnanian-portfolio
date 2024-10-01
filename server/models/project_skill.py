@@ -4,6 +4,13 @@ from config import db
 
 class ProjectSkill(db.Model, SerializerMixin):
 
+    serialize_rules = (
+        '-tech_project.project_skills',
+        '-tech_project.skills',
+        '-skill.project_skills',
+        '-skill.tech_projects'
+    )
+
     __tablename__ = "project_skills"
 
     id = db.Column(db.Integer, primary_key=True)
@@ -14,8 +21,8 @@ class ProjectSkill(db.Model, SerializerMixin):
     skill_id = db.Column(db.Integer, db.ForeignKey("skills.id"))
 
     # Relationships
-    tech_project = db.relationship("TechProject", back_populates="tech_projects")
-    skill = db.relationship("Skill", back_populates="skills")
+    tech_project = db.relationship("TechProject", back_populates="project_skills")
+    skill = db.relationship("Skill", back_populates="project_skills")
 
     def __repr(self):
         return f"<ProjectSkill {self.id}>"

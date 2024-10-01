@@ -6,6 +6,13 @@ from config import db
 
 class SkillType(db.Model, SerializerMixin):
 
+    serialize_rules = (
+        '-skills.skill_type_id',
+        '-skills.skill_type',
+        '-skills.project_skills',
+        '-skills.tech_projects'
+    )
+
     __tablename__ = "skill_types"
 
     id = db.Column(db.Integer, primary_key=True)

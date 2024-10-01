@@ -8,6 +8,12 @@ from config import db
 
 class TechProject(db.Model, SerializerMixin):
 
+    serialize_rules = (
+        '-skills.tech_projects',
+        '-skills.project_skills',
+        '-project_skills.tech_project'
+    )
+
     __tablename__ = "tech_projects"
 
     id = db.Column(db.Integer, primary_key=True)
