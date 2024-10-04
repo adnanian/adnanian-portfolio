@@ -1,7 +1,8 @@
-from flask import request, g, make_response
+from flask import request, g, send_from_directory, jsonify
 from models._models import *
 from resources._resources import *
 from config import app, db, api
+import os
 
 # RUN APP HERE
 
@@ -32,6 +33,21 @@ def get_record_by_id():
 @app.route("/")
 def index():
     return "<h1>Hello, world!</h1>"
+
+@app.route("/get-all-images", methods=["GET"])
+def get_all_images():
+    try:
+        files = os.listdir("./files")
+        image_files = [f for f in files if f.endswith(('.png', '.jpg', ))]
+        image_urls = [f'http://localhost:5000/get-image/{image_name}' for image_name in image_files]
+        return jsonify({"image_urls": image_urls})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+# Route to fetch an image by name
+@app.route('/get-image/<image_name>', methods=['GET'])
+def get_image(image_name):
+    return send_from_directory("./files", image_name)
 
 if __name__ == "__main__":
     app.run(port=5000, debug=True)

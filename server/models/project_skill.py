@@ -5,10 +5,10 @@ from config import db
 class ProjectSkill(db.Model, SerializerMixin):
 
     serialize_rules = (
-        '-tech_project.project_skills',
-        '-tech_project.skills',
-        '-skill.project_skills',
-        '-skill.tech_projects'
+        "-tech_project.project_skills",
+        "-tech_project.skills",
+        "-skill.project_skills",
+        "-skill.tech_projects",
     )
 
     __tablename__ = "project_skills"
